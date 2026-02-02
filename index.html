@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOMPUS FORMATION | Formations Secourisme & Prévention</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #455A46;
+            --secondary-color: #C1272D;
+            --text-dark: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-dark);
+        }
+        
+        .navbar {
+            background-color: var(--primary-color) !important;
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white !important;
+        }
+        
+        .navbar-brand span {
+            color: var(--secondary-color);
+        }
+        
+        .nav-link {
+            color: white !important;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        
+        .nav-link:hover {
+            color: var(--secondary-color) !important;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #2d3e2f 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .btn-primary-custom {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            color: white;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary-custom:hover {
+            background-color: #a01f25;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 50px;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            height: 100%;
+            padding: 30px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+        
+        .formation-badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin: 10px;
+            font-weight: 500;
+        }
+        
+        footer {
+            background-color: var(--text-dark);
+            color: white;
+            padding: 40px 0;
+            margin-top: 80px;
+        }
+        
+        .contact-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(69, 90, 70, 0.25);
+        }
+        
+        .about-section {
+            padding: 60px 0;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "\2713";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">KOMPUS <span>FORMATION</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#formations">Formations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <h1>Nos Formations</h1>
+            <p>Explorez votre potentiel avec KOMPUS Formation, spécialiste des formations en secourisme, prévention et développement personnel.</p>
+            <a href="#contact" class="btn btn-primary-custom mt-4">Contactez-nous</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="apropos">
+        <div class="container">
+            <h2 class="section-title">Qui sommes-nous ?</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <p class="lead">Dispensées par des formateurs qualifiés, nos formations sont taillées sur mesure pour répondre aux besoins spécifiques de chaque participant et structure. Devenez le maître de votre destin en acquérant les compétences essentielles pour une vie épanouissante.</p>
+                    <ul class="feature-list mt-4">
+                        <li>Formateurs qualifiés et expérimentés</li>
+                        <li>Approche pédagogique interactive</li>
+                        <li>Supports pédagogiques complets et actualisés</li>
+                        <li>Évaluation et suivi personnalisés</li>
+                        <li>Amélioration continue</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section class="py-5 bg-light" id="formations">
+        <div class="container">
+            <h2 class="section-title">Nos Formations</h2>
+            <div class="text-center">
+                <span class="formation-badge">SST - Sauveteur Secouriste du Travail</span>
+                <span class="formation-badge">Gestion du stress</span>
+                <span class="formation-badge">Massage cardiaque et défibrillateur (RCP)</span>
+                <span class="formation-badge">Formation extincteurs</span>
+                <span class="formation-badge">Premiers secours enfants et nourrissons</span>
+                <span class="formation-badge">Habilitation électrique</span>
+                <span class="formation-badge">Document unique DUERP</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" id="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">❤️</div>
+                        <h3>Formation en secourisme et en prévention</h3>
+                        <p>Réagir rapidement en cas d'urgence est crucial pour sauver des vies. Nos formations en secourisme enseignent les compétences nécessaires pour intervenir efficacement en cas d'accident ou d'arrêt cardiaque.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">💼</div>
+                        <h3>Conseil</h3>
+                        <p>Optimisez votre entreprise avec nos conseils en management, RH et prévention. Chez KOMPUS, transformez les défis en opportunités de croissance. Maximisez le potentiel de votre équipe avec nos stratégies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">🌱</div>
+                        <h3>Développement personnel</h3>
+                        <p>Epanouissez-vous avec nos formations en développement personnel. Nos programmes stimulent votre croissance personnelle et professionnelle. Explorez la gestion du stress, la communication efficace, la confiance en soi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Nous contacter</h2>
+            <p class="text-center mb-5">Pour toute question ou inscription, contactez-nous! Notre équipe est là pour vous aider à choisir la formation qui vous convient.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <div class="mb-3">
+                            <label class="form-label">Nom *</label>
+                            <input type="text" name="nom" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">E-mail *</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Objet</label>
+                            <input type="text" name="objet" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea name="message" class="form-control" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-custom w-100">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>KOMPUS FORMATION</h4>
+                    <p>Formations en secourisme, prévention et développement personnel</p>
+                    <p><strong>Email:</strong> kompus.formation1@gmail.com</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Informations légales</h4>
+                    <p>KOMPUS Formation SASU<br>
+                    12 Clos du moulin, 95330 Domont<br>
+                    SIRET: 87901052800022<br>
+                    N° déclaration activité: 11950667495</p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0">© 2026 KOMPUS Formation. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
